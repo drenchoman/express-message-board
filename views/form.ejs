@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>New Message</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1><%= title %> </h1>
+      <form class ="messageForm" method="POST" action="/new">
+        <input type="text" name="text" value="Create your message">
+        <input type="text" name="user" value="Your Username">
+        <button type="submit" formmethod="post">Send</button>
+
+      </form>
+    </div>
+  </body>
+  <script src="javascripts/test.js" ></script>
+</html>
