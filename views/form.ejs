@@ -6,15 +6,22 @@
     <link rel="stylesheet" href="stylesheets/style.css">
   </head>
   <body>
-    <div class="container">
+    <div class="header">
       <h1><%= title %> </h1>
+      <a href="/">Home</a>
+    </div>
+    <div class="messageContainer">
       <form class ="messageForm" method="POST" action="/new">
-        <input type="text" name="text" value="Create your message">
+        <p class="formHeader">Your message</p>
+        <textarea  rows="10" cols="4" name="text">Create your message </textarea>
+        <p class="formHeader">Your username</p>
         <input type="text" name="user" value="Your Username">
         <button type="submit" formmethod="post">Send</button>
 
       </form>
     </div>
+
+
   </body>
   <script src="javascripts/test.js" ></script>
 </html>

@@ -1,7 +1,6 @@
 body {
-  padding: 50px;
+  margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-
 }
 
 a {
@@ -19,6 +18,67 @@ a {
 .messageForm {
   display: flex;
   flex-direction: column;
-  height: 20%;
-  justify-content: space-between;
+  max-height: 100%;
+  height: 500px;
+  width: 25%;
+  justify-content: space-around;
+  background-color: #e1e5ea;
+  margin: 2% 0;
+  padding: 2%;
+
+}
+
+.messageForm > button {
+  width: 20%;
+  justify-content: center;
+  align-self: center;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #a7bbc7;
+  color: white;
+}
+
+.messageForm > button:hover{
+  transform: scale(1.2);
+}
+
+.messages{
+background-color: #e1e5ea;
+margin: 1% 0;
+padding: 1%;
+width: 60vw;
+height: 100%;
+}
+
+.message{
+  font-size: 1.2em;
+}
+
+.messageContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #faf3f3;
+  padding: 1% 0;
+}
+
+.userName{
+  font-size: 2em;
+  color: black;
+  margin: 0;
+
+}
+
+.formHeader{
+  margin: 0;
+  font-size: 2em;
 }
