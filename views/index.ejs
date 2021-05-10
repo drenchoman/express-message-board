@@ -5,15 +5,28 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    <a href="/new"><em>Send a message</em></a>
-    <ul>
-      <% messages.forEach((message) => { %>
-        <li><%= message.text %> <em>from <%= message.user %></em> </li>
-        <li><%= message.added %> </li>
-        <br />
-      <% }) %>
-    </ul>
+    <div class="header">
+      <h1><%= title %></h1>
+      <p>Welcome to the <%= title %>.</p>
+      <br>
+        <p>Click below to send a message!</p>
+      <a href="/new">Send a message</a>
+    </div>
+
+<div class="messageContainer">
+  <% messages.forEach((message) => { %>
+      <div class="messages">
+    <p class="userName"><%= message.user %> </p>
+    <p class="message"><%= message.text %>  </p>
+    <p>Message sent:
+      <br> <em><%= message.added %></em> </p>
+    <br />
+      </div>
+  <% }) %>
+
+</div>
+
+
+
   </body>
 </html>
